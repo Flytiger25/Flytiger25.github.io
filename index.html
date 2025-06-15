@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Academic Webpage" />
+    <meta name="author" content="senli1073" />
+    <title id="title"></title>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
+    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
+
+    <!-- Bootstrap core JS-->
+    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
+
+    <!-- For Compatability -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    
+    <!-- Markdown -->
+    <script type="text/javascript" src="static/js/marked.min.js"></script>
+
+    <!-- Mathematics -->
+    <script>
+        // See https://docs.mathjax.org/en/latest/index.html for more details.
+        MathJax = {
+            tex: {
+                packages: {},              // extensions to use
+                inlineMath: [              // start/end delimiter pairs for in-line math
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ],
+                displayMath: [             // start/end delimiter pairs for display math
+                    ['$$', '$$'],
+                    ['\\[', '\\]']
+                ],
+                processEscapes: false,      // use \$ to produce a literal dollar sign
+                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
+                processRefs: true,         // process \ref{...} outside of math mode
+                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
+                tags: 'all',              // or 'ams' or 'all'
+                tagSide: 'right',          // side for \tag macros
+                tagIndent: '0.8em',        // amount to indent tags
+                useLabelIds: true,         // use label name rather than tag for ids
+                maxMacros: 10000,          // maximum number of macro substitutions per expression
+                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
+                formatError:               // function called when TeX syntax errors occur
+                    (jax, err) => jax.formatError(err)
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- Core JS-->
+    <script type="text/javascript" src="static/js/scripts.js"></script>
+    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-5">
+            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                MENU
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#research">RESEARCH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#projects">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#activities">ACTIVITIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5 reveal" id="home">
+        <div class="container px-5">
+            <div class="profile-no-card">
+                <div class="profile-classic-photo">
+                    <img src="static/assets/img/photo.png" alt="Profile Photo">
+                    <div class="profile-name-under-photo">段俊文</div>
+                </div>
+                <div class="profile-no-card-info">
+                    <div class="main-body" id="home-md"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="bg-gradient-primary-to-secondary-gray mt5 md5 reveal" id="projects">
+        <div class="container px-5">
+            <header>
+                <h2 id="projects-subtitle"><i class="bi bi-folder-fill"></i>&nbsp;Research</h2>
+            </header>
+            <div class="project-container">
+                <!-- 项目1 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="static/assets/img/CurveFair/2.png"alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">基于能量泛函的曲线光顺算法</h3>
+                        <p class="project-description">在CAD/CAM、船舶建模和几何建模中，对初始曲线进行平滑处理，以提高曲面质量与可制造性。基于工业应用需求，提出了一种基于能量最小化的B样条曲线光顺方法。</p>
+                        <div class="project-achievements">
+                            <h4>核心技术与模块</h4>
+                            <ul>
+                                <li><strong>弧长参数映射，</strong>通过重参数化方式使导数具备曲率与曲率变化率的几何意义，同时保持原始曲线形状不变</li>
+                                <li><strong>能量泛函构建，</strong>以曲率变化率<code>（弧长参数化曲线其三阶导数即为曲率</code>为优化目标，建立光顺能量模型衡量曲线平滑程度</li>
+                                <li><strong>约束系统集成，</strong>引入边界条件与连续性约束，保障拼接过渡处的几何一致性<code>（G1）</code></ul>li>
+                                <li><strong>线性系统求解，</strong>将优化问题转化为稀疏线性方程组，求解控制点实现高效光顺</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目2 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="static/assets/img/Gordon/3.png" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">基于引导线的船壳曲面构造算法</h3>
+                        </h3>
+                        <p class="project-description">面向大尺度、复杂边界的船壳建模需求，设计并实现了一套基于引导线与Gordon理论的高质量曲面构造算法。该方法有效解决工程中曲面拼接不连续、边界不光顺等问题，已成功应用于船壳曲面设计。</p>
+                        <div class="project-achievements">
+                            <h4>核心技术与模块</h4>
+                            <ul>
+                                <li><strong>引导线网络构建，</strong>基于 <code>Coon</code> 曲面理论生成边界与引导线的等参交点网络</li>
+                                <li><strong>边界约束增强，</strong>融合插值与拟合方法，引入边界切向约束提升曲面连续性</li>
+                                <li><strong>曲面构造模块，</strong>基于 <code>OCCT</code> 实现自动采样、曲线重排、边界裁剪与自交检测</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 项目3 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="static/assets/img/Intersect/Intersect_1.png" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">基于离散曲线曲面的求交算法</h3>
+                        </h3>
+                        <p class="project-description">针对复杂几何造型中的曲线与曲面、以及曲面间的求交问题，设计并实现了一套通用的参数域离散化求交算法框架。该方法适用于高复杂度场景，兼顾计算效率与求交精度，已集成于几何处理模块中。</p>
+                        <div class="project-achievements">
+                            <h4>核心技术与模块</h4>
+                            <ul>
+                                <li><strong>离散化策略，</strong>采用参数域划分将曲线和曲面分别转化为线段与三角面片集合</li>
+                                <li><strong>空间加速结构，</strong>引入 <code>R 树</code> 索引结构，提升大规模面片集合间的交点检索效率</li>
+                                <li><strong>可视化交互，</strong>基于 <code>Qt</code> 与 <code>OCCT</code> 开发动态调试界面，支持全过程交互可视</li>
+                                <li><strong>算法测试体系，</strong>结合 <code>PostgreSQL</code> 与 <code>Google Test</code> 构建自动化数据管理与单元测试框架</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="bg-gradient-primary-to-secondary-gray mt5 md5 reveal" id="projects">
+        <div class="container px-5">
+            <header>
+                <h2 id="projects-subtitle"><i class="bi bi-folder-fill"></i>&nbsp;Project</h2>
+            </header>
+            <div class="project-container">
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="static/assets/img/OpenGL/1.png" alt="OpenGL Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">OpenGL渲染引擎构建实战</h3>
+                        <p class="project-description">
+                            项目从零搭建OpenGL实时渲染框架，支持模型导入、纹理贴图、光照计算、材质系统与后处理效果，涵盖完整渲染管线开发流程。项目面向引擎底层学习者与图形学研究者，采用现代C++封装架构，逐步实现核心功能。
+                        </p>
+                        <div class="project-achievements">
+                            <h4>核心技术与模块</h4>
+                            <ul>
+                                <li><strong>日志系统，</strong>基于 <code>spdlog</code> 实现全局日志输出，覆盖渲染流程、资源加载等关键步骤</li>
+                                <li><strong>图像加载，</strong>使用 <code>stb_image</code> 加载纹理资源，支持RGBA与多格式图像贴图</li>
+                                <li><strong>模型解析，</strong>集成 <code>Assimp</code> 支持OBJ等格式模型导入，读取网格、法线、UV及多材质信息</li>
+                                <li><strong>材质系统，</strong>实现漫反射、镜面高光、法线贴图等效果，支持多纹理绑定与自定义 Shader 属性</li>
+                                <li><strong>渲染管线，</strong>封装<code>Shader</code>类，统一管理着色器加载、编译、链接与Uniform变量更新</li>
+                                <li><strong>帧缓冲机制，</strong>构建 <code>FBO</code> 支持屏幕纹理输出与后处理管线，为实现模糊、高光、屏幕空间特效奠定基础</li>
+                                <li><strong>摄像机控制，</strong>实现完整摄像机类，支持位置/视角控制及View/Projection矩阵计算</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Activities -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5 reveal" id="activities">
+        <div class="container px-5">
+            <header>
+                <h2 id="activities-subtitle"><i class="bi bi-calendar-event"></i>&nbsp;Personal Interests</h2>
+            </header>
+            <div class="project-container">
+                <div class="project-item">
+                    <div class="project-image">
+                         <img src="static/assets/img/Render/Animation.png" alt="Activity 1">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">中国汉语言宣传动画</h3>
+                        <p class="project-description">计算机设计大赛参赛作品，获得国家三等奖，省级二等奖</p>
+                        <div class="project-details">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-content">
+                        <h3 class="project-title">三维建模个人作品集</h3>
+                        <div class="project-details"></div>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="static/assets/img/Render/1.jpg" alt="Render 1">
+                        <img src="static/assets/img/Render/2.jpg" alt="Render 2">
+                        <img src="static/assets/img/Render/3.jpg" alt="Render 3">
+                        <img src="static/assets/img/Render/4.jpg" alt="Render 4">
+                        <img src="static/assets/img/Render/5.jpg" alt="Render 5">
+                        <img src="static/assets/img/Render/6.jpg" alt="Render 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards -->
+    <section class="bg-gradient-primary-to-secondary-gray mt5 md5 reveal" id="awards">
+        <div class="container px-5">
+            <header>
+                <h2 id="awards-subtitle"><i class="bi bi-trophy-fill"></i>&nbsp;AWARDS</h2>
+            </header>
+            <div class="main-body" id="awards-md"></div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="bg-bottom text-center py-5">
+        <div class="container px-5">
+            <div class="text-white-50 small">
+                <div id="copyright-text" class="mb-2"></div>
+                <a id="github-link" href="https://github.com/BesTLP">Github</a>
+                <span class="mx-1">&middot;</span>
+                <a id="license-link" href="https://github.com/BesTLP/BesTLP.github.io/blob/main/LICENSE">License</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 添加滚动显示动画的脚本 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            function reveal() {
+                reveals.forEach(element => {
+                    const windowHeight = window.innerHeight;
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < windowHeight - elementVisible) {
+                        element.classList.add('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', reveal);
+            reveal(); // 初始检查
+        });
+    </script>
+
+</body>
+</html>

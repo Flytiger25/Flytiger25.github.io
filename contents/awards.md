@@ -12,6 +12,3 @@
 
 <span style="color:#2c3e50;"><strong>中国大学生计算机设计大赛 2022</strong></span>  
 - 动漫与短片专业组 省级二等奖、国家三等奖  
-
-<span style="color:#2c3e50;"><strong>卧谈荟征文比赛 2021</strong></span>  
-- 获得三等奖  
